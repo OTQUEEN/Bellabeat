@@ -21,3 +21,98 @@ The dataset was put together by FitBit Fitness. Please [click here](https://www.
 We verified the authenticity of the data and also privacy, security, and accessibility. This data seeks to be used for it intense purpose, only for business analysis for Bellabeat.
 
 
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/cf2206b1-5ee8-4d98-b152-b0948dc27bee)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/3969cbfd-3070-4d31-9eea-c75b85e285a6)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/b42f886f-a07e-448e-bc90-00518e3f4458)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/23c252a6-2ecb-492d-ac2d-6ce65632937e)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/c987a4da-3953-49a6-931e-53c94797155b)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/e7fa55cc-0570-46ed-913a-1d2e7dfd6de4)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/f17702a9-34e1-4bb7-b870-0eaa6c4929f7)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/c22f93f8-46e1-4634-a3bc-9610ed94bb26)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/cbc38a55-44ea-4548-8275-e8e9b3b5ee40)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/406e22c5-5027-45b1-9bb1-eaf6e59e2753)
+We have seen that only sleep_day file contains three duplicated values. And there is no NA value in our selected dataset. Let's remove the duplicate and test to confirm.
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/296efbb0-6003-42b6-9c30-fec47ffa614f)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/ef60dd98-4c17-4fb4-b095-087a6184d419)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/c7d8b1fe-1078-45b5-8bd6-4729d7b13d0d)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/382eb2f2-8a37-4ebf-8af4-0ad0d13eab35)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/ddc35dfe-ad96-4ac5-96a0-9b33c3f7d843)
+
+Now, we can see that our four files are fully cleaned and merged as daily_merged with all the neccessary data in columns needed for our analysis to aid Bellabeat in the business strategy. In our next session, we shall proceed with the analysis to find statistical descriptive analysis, trends, correlations.
+
+3.5 Data classification
+Before we continue to the analysis part, let's look at how we can classify our data to have a specific cluster of groups. We can add the weekdays to our data using the date. And also, base on the classification made by Australia’s Physical Activity & Sedentary Behaviour Guidelines for Adults (18-64 Years) [click here for more ](https://www.10000steps.org.au/articles/physical-activity-guidelines/australias-physical-activity-sedentary-behaviour-guidelines-adults-18-64-years/)] an individual's daily minutes for active walk can be classified as:
+
+Accumulate 150 to 300 minutes (2 ½ to 5 hours) of moderate intensity physical activity
+75 to 150 minutes (1 ¼ to 2 ½ hours) of vigorous intensity physical activity
+Above 300 minutes (above 2 ½ hoiurs) Active intensity
+Also a goal of 1000 steps target is recommended for every healthy adult. And according to their classification: [link here](https://www.10000steps.org.au/articles/healthy-lifestyles/counting-steps/)]
+
+Sedentary is less than 5,000 steps per day
+Low active is 5,000 - 7,499 steps per day
+Somewhat active is 7,500 - 9,999 steps per day
+Active is more than 10,000 steps per day
+Highly active is more than 12,500
+We shall classify our data base on the total steps.
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/4441aa0e-a7b5-4044-9400-2584bc3f888e)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/fa6927d2-c8e8-40dc-975f-8fd8872eda28)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/e2e48da6-2ac8-4ecd-aefc-805f9b527b84)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/8403d64c-39fb-480f-b609-908ce33e84a1)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/5af2d0c4-e0c4-4bb1-a34e-8976cc8ed4f8)
+
+From figure 1, it's clearly shown confirms the descriptive analysis of the summary() function above. Figure 2 also indicates that on Saturdays, participants take a lot of walk, being high active and active usergroup. However, this does not confirm that many participants walk on Saturday. We shall establish this in our further analysis.
+
+Now that we have established that participants take a lot of walk on Saturday, we shall further find out the day many participants go for walk.
+
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/8d9f0e81-68e7-4cef-87d2-bf77b3ac3806)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/e77bbfe2-4f99-4392-8ef5-c31aba969b4c)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/90a47d50-1d94-4385-9135-e88038770a0d)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/93ea01f9-bdf3-49a1-a476-ec9689fa2e73)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/3802feda-f601-4601-ab4f-844bbca59da8)
+From the graph above, we see that there is no correlation between participants daily steps taken and their minutes of sleeping. Hence individuals amount of minutes to sleep does not depends on the daily walk activity.
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/7080b50d-322d-41c4-81b2-a180721c6507)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/8fd646d5-741b-4cb8-90ff-36585d4610ec)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/cfa15b1e-e4f5-40f4-9e3a-a9e6451d8380)
+Figure 6 clearly shows that there a positive correlation between daily steps and daily calories. This confirms that the more steps participants takes, the more calories they burn. We can view this from the point of Saturday, which gives almost a perfect linear regression reconfirming that indeed, many steps were taken on this day.
+
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/738bfbbe-819e-4c38-8dae-2d4e3198a7d5)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/cb963d95-0bf9-4d38-b8b3-818d3de34e8b)
+
+On figure 8, there is no relation between number of step taken and amount of time in bed.
+
+On figure 9, it clearing shows that distance covered commensurate with the number of steps taking in the day.
+
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/18f56836-4fbe-4bfa-bd0e-61fa6b3aabe9)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/64444d71-712b-4823-af59-6aa8dcb04b8b)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/f4932415-6587-4a5d-baab-ffcda7863e34)
+![image](https://github.com/OTQUEEN/Bellabeat/assets/152812768/9d1f6d4b-32dd-4361-9dcd-1baf0bc0ba50)
+
+Figure 10 above indicates that users use their smart device in their stationary position(sedentary) for 49.45% out of 24hrs in a day, follow by 15.04% being lightly active whiles 1.74% represent "very active" time of using the device in a day. This shows that most users use the smart device either for sleep monitoring or heartrate reading.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
